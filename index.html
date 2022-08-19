@@ -14,7 +14,7 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -137,9 +137,11 @@
      var navLinks = document.getElementById("navLinks");
      function showMenu(){
         navLinks.style.right="0";
+        // navLinks.style.display="initial";
      }
      function hideMenu(){
-        navLinks.style.right="-200px"
+        navLinks.style.right="-200px";
+        // navLinks.style.display="none";
      }
 </script>
 </body>
