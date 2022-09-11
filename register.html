@@ -59,90 +59,106 @@
 ?> -->
 
 <head>
-<title> Login Form Design </title>
-<link rel="stylesheet" href="Style.css">
-<style type="text/css">
-    
-    body{
-    margin: 0;
-    padding: 0;
-    background-image:url(bb.png);
-    background-size:cover;
-    background-position:center;
-    font-family:sans-serif;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-.loginbox{
-    width: 320px;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.521);
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    border-radius: 20px;
-}
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-h1{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.loginbox input{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.loginbox input[type="text"], input[type="password"]
-{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #0000ff;
-    font-size:20px;
+    <title> Login Form Design </title>
+    <link rel="stylesheet" href="Style.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(bb.png);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
 
-}
-.loginbox input[type="checkbox"]{
-    margin-bottom: 20px;
-    width: 20px;
-}
-.loginbox input[type="submit"]
-{
-    border:none;
-    outline: none;
-    height: 40px;
-    background: #fb2525;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px; 
-}
-.loginbox input[type="submit"]:hover
-{
-    cursor: pointer;
-    background:#ffc107;
-    color: #000;
-}
+        .loginbox {
+            width: 320px;
+            height: 80%;
+            background: rgb(0 0 0 / 69%);
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 20px;
+        }
 
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+        }
 
-</style>
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .loginbox p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #66BC46;
+        }
+
+        .loginbox h1 {
+            color: #41b6dc;
+        }
+
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .loginbox input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #ffffff;
+            font-size: 17px;
+
+        }
+
+        ::placeholder {
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        .loginbox input[type="checkbox"] {
+            margin-bottom: 20px;
+            width: 20px;
+        }
+
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #41B6DC;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .loginbox input[type="submit"]:hover {
+            cursor: pointer;
+            background: #66BC46;
+            color: #000;
+            transition: 1s;
+        }
+    </style>
 </head>
 
 
@@ -156,61 +172,61 @@ h1{
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <!-- <li><a href="">BLOG</a></li> -->
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="index.html#cta">COURSE</a></li>
+                    <li><a href="index.html#ContactUs">CONTACT</a></li>
                     <li><a href="signup.html">SIGN IN</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    <div class="text-box">
-        <!-- <h1>Your one-stop shop for Internships</h1> -->
-        <!-- <p>Making websites is now ones of the easiest thing i the world. You just nedd to learn HTML,CSS and <br> javascript and you are good to go.</p> -->
-        <!-- <a href="" class="hero-btn">Visit Us to know more </a> -->
-    </div>  
+        <div class="text-box">
+        </div>
     </section>
-<section>
+    <section>
 
 
-    <div class="loginbox">
-    <img src="images/avatar1.png" class="avatar">
-    <h1>Register Here</h1>
-    <form method="POST">
-        
-        <p>Email</p>
-        <input type="text" name="email" id="register-email" placeholder="Enter Email ID" required data-error="*Please fill out this field">
-        <p>Name</p>
-        <input type="text" name="username" id="register-username" placeholder="Enter Full Name" required data-error="*Please fill out this field">
-        <P>Password</P>
-        <input type="password" name="password" id="myInput" placeholder="Enter  Password" required data-error="*Please fill out this field">
-        <P>Confirm Password </P>
-        <input type="password" name="passwordconfirm" id="myinput" placeholder="Confirm  Password" required data-error="*Please fill out this field">
-        <input type="checkbox" onclick="myFunction()">Show Password<br>
+        <div class="loginbox">
+            <img src="images/avatar1.png" class="avatar">
+            <h1>Register Here</h1>
+            <form method="POST">
 
-        <input type="checkbox" name="acceptcheck" id="check"  required ><span>Terms & Conditions</span><br><br>
-                           
-                        
-         <input type="submit" value="Register" >
-         <!-- <a href="home.php"><h3 style="float: left;">Home..</h3></a>
+                <p>Email</p>
+                <input type="email" name="email" id="register-email" placeholder="Enter Email ID" required
+                    data-error="*Please fill out this field">
+                <p>Name</p>
+                <input type="text" name="username" id="register-username" placeholder="Enter Full Name" required
+                    data-error="*Please fill out this field">
+                <P>Password</P>
+                <input type="password" name="password" id="myInput" placeholder="Enter  Password" required
+                    data-error="*Please fill out this field">
+                <P>Confirm Password </P>
+                <input type="password" name="passwordconfirm" id="myinput" placeholder="Confirm  Password" required
+                    data-error="*Please fill out this field">
+                <input type="checkbox" onclick="myFunction()">Show Password<br>
+
+                <!-- <input type="checkbox" name="acceptcheck" id="check" required><span>Terms & Conditions</span><br><br> -->
+
+
+                <input type="submit" value="Register">
+                <!-- <a href="home.php"><h3 style="float: left;">Home..</h3></a>
          <a href="login.php"><h3 style="float: right;">Back...</h3></a> -->
-        
-        
-    </form> 
-</div>
-</section>
+
+
+            </form>
+        </div>
+    </section>
 </body>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myInput");
-var y = document.getElementById("myinput");
-  if (x.type === "password") {
-    x.type = "text";
-y.type = "text";
-  } else {
-    x.type = "password";
-    y.type = "password";
-  }
-}
+    function myFunction() {
+        var x = document.getElementById("myInput");
+        var y = document.getElementById("myinput");
+        if (x.type === "password") {
+            x.type = "text";
+            y.type = "text";
+        } else {
+            x.type = "password";
+            y.type = "password";
+        }
+    }
 </script>

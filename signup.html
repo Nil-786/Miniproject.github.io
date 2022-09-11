@@ -48,125 +48,130 @@
 
 
 <head>
-<title> Login Form Design </title>
-<link rel="stylesheet" href="Style.css">
-<style type="text/css">
-    body{
-    margin-right: 20px;
-    padding: 0;
-    background:url(bb.png);
-    background-size:cover;
-    background-position:center;
-    font-family:sans-serif;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-.loginbox{
-    width: 320px;
-    height: 420px;
-    background: rgba(0, 0, 0, 0.425);
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-h1{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.loginbox input{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.loginbox input[type="text"], input[type="password"]
-{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size:20px;
+    <title> Login Form Design </title>
+    <link rel="stylesheet" href="Style.css">
+    <style type="text/css">
+        body {
+            padding: 0;
+            background: url(bb.png);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
 
-}
-.loginbox input[type="submit"]
-{
-    border:none;
-    outline: none;
-    height: 40px;
-    background: #41B6DC;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px; 
-}
-.loginbox input[type="submit"]:hover
-{
-    cursor: pointer;
-    background:#66BC46;
-    color: #000;
-}
+        .loginbox {
+            width: 320px;
+            height: 420px;
+            background: rgb(0 0 0 / 69%);
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 20px;
+        }
 
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+        }
 
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+            color: #41B6DC;
+        }
 
+        .loginbox p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #66BC46;
+        }
+        ::placeholder {
+            color: #ffffff;
+            font-size: 12px;
+        }
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
+        .loginbox input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 17px;
 
+        }
 
-</style>
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #41B6DC;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .loginbox input[type="submit"]:hover {
+            cursor: pointer;
+            background: #66BC46;
+            color: #000;
+            transition: 1s;
+        }
+    </style>
 </head>
+
 <body>
     <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <!-- <li><a href="">BLOG</a></li> -->
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="signup.html">SIGN IN</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    <div class="text-box">
-        <!-- <h1>Your one-stop shop for Internships</h1> -->
-        <!-- <p>Making websites is now ones of the easiest thing i the world. You just nedd to learn HTML,CSS and <br> javascript and you are good to go.</p> -->
-        <!-- <a href="" class="hero-btn">Visit Us to know more </a> -->
-    </div>  
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="index.html#cta">COURSE</a></li>
+                        <li><a href="index.html#ContactUs">CONTACT</a></li>
+                        <li><a href="signup.html">SIGN IN</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+        <div class="text-box">
+        </div>
     </section>
     <div class="loginbox">
-    <img src="images/avatar1.png" class="avatar">
-    <h1>Login Here</h1>
-    
-    <form method="POST">
+        <img src="images/avatar1.png" class="avatar">
+        <h1>Login Here</h1>
 
-        <p>Username</p>
-        <input type="text" name="username" placeholder="Enter Username">
-        <p>Password</p>
-        <input type="password" name="password" placeholder="Enter Password">
-        <input type="submit" name="log" value="Login">
-        <a href="register.php" >Don't have an account? </a>
-    </form>
-</div>
+        <form method="POST">
+
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="log" value="Login">
+            <a href="register.html" style="margin-left: 45px; color: #41b6dc ;">Don't have an account? </a>
+        </form>
+    </div>
 
 </body>

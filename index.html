@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,143 +8,235 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>University</title>
 </head>
+
 <body>
     <section class="header">
-        <nav class="Navbar" >
-            <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <!-- <li><a href="">BLOG</a></li> -->
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="signup.html">SIGN IN</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    <div class="text-box">
-        <h1 style="color:#38B6FF ;">Your one-stop shop for Internships</h1>
-        <p>Making websites is now ones of the easiest thing i the world. You just nedd to learn HTML,CSS and <br> javascript and you are good to go.</p>
-        <a href="#course" class="hero-btn">Visit Us to know more </a>
-    </div>  
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="#cta">COURSE</a></li>
+                        <li><a href="#ContactUs">CONTACT</a></li>
+                        <li><a href="signup.html">SIGN IN</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+        <div class="text-box">
+            <h1 style="color:#38B6FF ;">Your one-stop shop for Internships</h1>
+            <p>Got Skills!!, But no Opportunities?? <br> Don't worry 😌 . You're at the right place!!</p>
+            <a href="#course" class="hero-btn">Visit Us to know more </a>
+        </div>
     </section>
-<!-- course -->
-<section class="course" id="course">
-    <h1>Courses we offer</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    <div class="row">
-        <div class="course-col">
-            <h3>Intermediate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro aspernatur non sed, suscipit dolores totam exercitationem .</p>
-        </div>
-        <div class="course-col">
-            <h3>Degree</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro aspernatur non sed, suscipit dolores totam exercitationem .</p>
-        </div>
-        <div class="course-col">
-            <h3>Post Graduation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro aspernatur non sed, suscipit dolores totam exercitationem .</p>
-        </div>
-
-    </div>
-</section>
-<!-- camous -->
-<section class="campus">
-    <h1>Our Global campus</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <div class="row">
-        <div class="campus-col">
-            <img src="images/london.png" alt="">
-            <div class="layer">
-                <h3>LONDON</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/newyork.png" alt="">
-            <div class="layer">
-                <h3>NEW YORK</h3>
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/washington.png" alt="">
-            <div class="layer">
-                <h3>WASHINGTON</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- facilities -->
-
-<section class="facilities">
-    <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <div class="row">
-        <div class="facilities-col">
-            <img src="images/library.png" alt="">
-            <h3>World Class Library</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="facilities-col">
-            <img src="images/basketball.png" alt="">
-            <h3>Largest Playground</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="facilities-col">
-            <img src="images/cafeteria.png" alt="">
-            <h3>Tasty and healthy food</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
-</section>
-
-<!-- testimonials -->
-<section class="testimonials">
-    <h1>What our Student says</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <div class="testimonials-col">
+    <!-- course -->
+    <section class="course" id="course">
+        <h1>What's great about us?</h1>
+        <p>A platform to get all your jobs done. </p>
         <div class="row">
-            <img src="images/user1.jpg" alt="">
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci voluptate dicta similique numquam illo debitis minus nulla .</p>
-                <h3>Christine Berkley</h3>
+            <div class="course-col">
+                <h3>Browse portfolios
+                <p>Find talented budding professionals you can trust by browsing their samples of previous work and reading their profile reviews .</p>
             </div>
+            <div class="course-col">
+                <h3>Fast bids</h3>
+                <p>Receive obligation free quotes from our talented students fast. 60% of projects get bid on within a minute</p>
+            </div>
+            <div class="course-col">
+                <h3>Quality work</h3>
+                <p>Freelancer.com has by far the largest pool of quality freelancing students globally- over thousands to choose from.</p>
+            </div>
+
         </div>
+    </section>
+    <!-- camous -->
+    <section class="campus">
+        <h1>Most seeked job roles.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="row">
-            <img src="images/user2.jpg" alt="">
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci voluptate dicta similique numquam illo debitis minus nulla .</p>
-                <h3>David  Berkley</h3>
+            <div class="campus-col">
+                <img src="images/london.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- call to action -->
+    <!-- facilities -->
 
-<section class="cta">
-    <h1>Enroll for our various online courses<br>Anywhere form the world </h1>
-    <a href="#">CONTACT US</a>
-</section>
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Playground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and healthy food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
 
-<!-- javascript for toggle menu -->
-<script>
-     var navLinks = document.getElementById("navLinks");
-     function showMenu(){
-        navLinks.style.right="0";
-        // navLinks.style.display="initial";
-     }
-     function hideMenu(){
-        navLinks.style.right="-200px";
-        // navLinks.style.display="none";
-     }
-</script>
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1>What our Student says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="testimonials-col">
+            <div class="row">
+                <img src="images/user1.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci voluptate dicta similique
+                        numquam illo debitis minus nulla .</p>
+                    <h3>Christine Berkley</h3>
+                </div>
+            </div>
+            <div class="row">
+                <img src="images/user2.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci voluptate dicta similique
+                        numquam illo debitis minus nulla .</p>
+                    <h3>David Berkley</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- call to action -->
+
+    <section class="cta" id="cta">
+        <h1>Learn from the best online courses!!<br>Handpicked by us for you </h1>
+        <a href="#">Visit Courses</a>
+    </section>
+    <section class="Contact-Us-Header" id="ContactUs">
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.8902068292077!2d72.85365521482456!3d19.243616186991982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b13affffffff%3A0xfd071f1d3a7844ef!2sSt.%20Francis%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1662894387992!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Put any any Address</h5>
+                        <p>Mumbai,India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 123456789</h5>
+                        <p>Monday to Saturday,9am to 5pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@internshop.com</h5>
+                        <p>Email us your query!</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name:" required>
+                    <input type="email" placeholder="Enter your email address:" required>
+                    <input type="text" placeholder="Enter your subject:" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla, eleifend faucibus
+            est
+            <br>
+            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "O"!
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+            // navLinks.style.display="initial";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            // navLinks.style.display="none";
+        }
+        document.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            const navbarHeight = 100;
+            const distanceFromTop = Math.abs(
+                document.body.getBoundingClientRect().top
+            );
+            if (distanceFromTop >= navbarHeight) navbar.classList.add("fixed-top");
+            else navbar.classList.remove("fixed-top");
+        });
+    </script>
 </body>
+
 </html>
